@@ -1,0 +1,45 @@
+.row {
+    margin: 0 -20px;
+}
+
+.one-third,
+.one-fourth {
+    float: left;
+    padding: 0 20px;
+}
+
+.one-third {
+    width: 33.33%;
+}
+
+.one-fourth {
+    width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+    .center-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .one-third {
+        width: 100%;
+    }
+    
+    .one-fourth {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .one-third, .one-fourth {
+        float: none;
+    }
+    
+    .one-fourth {
+        width: 100%;
+    }
+}

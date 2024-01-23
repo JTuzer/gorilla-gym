@@ -1,0 +1,422 @@
+.center-box {
+    margin: 0 auto;
+    width: 1200px;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: #0d0d17 url("../img/body.png") top center repeat;
+}
+
+header {
+    padding: 20px 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0d0d17+0,0d0d17+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(13, 13, 23, 1) 0%, rgba(13, 13, 23, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(13, 13, 23, 1) 0%, rgba(13, 13, 23, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(13, 13, 23, 1) 0%, rgba(13, 13, 23, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d0d17', endColorstr='#000d0d17', GradientType=0);
+    /* IE6-9 */
+}
+
+#logo {
+    float: left;
+}
+
+#logo a {
+    width: 225px;
+    height: 40px;
+    display: block;
+    background: url("../img/gorilla.svg") top left no-repeat;
+    background-size: 100% auto;
+}
+
+#hamburger img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+#top {
+    background: url("../img/welcome.png") top center no-repeat;
+}
+
+#header-promo {
+    clear: both;
+    margin: 100px 0 0 0;
+}
+
+#promo-text {
+    width: 50%;
+}
+
+#promo-text .button {
+    margin-bottom: 100px;
+}
+
+.button {
+    background-color: #b0f045;
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px 0 15px;
+    position: relative;
+}
+
+/* button decoration */
+.button:before {
+    content: "";
+    top: 0;
+    right: -10px;
+    background-color: #b0f045;
+    display: block;
+    height: 38px;
+    width: 20px;
+    position: absolute;
+    transform: skew(-20deg, 0deg);
+}
+
+.button:after {
+    content: "";
+    top: 0;
+    right: -5px;
+    background-color: #b0f045;
+    display: block;
+    height: 38px;
+    width: 10px;
+    position: absolute;
+    transform: skew(-20deg, 0deg);
+    border-left: solid 3px #000;
+    border-right: solid 3px #000;
+}
+
+.button:hover {
+    background-color: #000;
+    color: #b0f045;
+}
+
+#trainings {
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    padding-bottom: 70px;
+}
+
+#trainings img {
+    width: 100%;
+}
+
+.service {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.service:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 40%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.48+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#7a000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.service .button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+#offer {
+    clear: both;
+    background: #0e0e18 url("../img/offer.png") top center no-repeat;
+    background-size: cover;
+    -moz-box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.9);
+}
+
+.offer-text {
+    float: right;
+    width: 45%;
+    padding: 50px 0;
+}
+
+#offer ul {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#offer ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 30px;
+}
+
+#offer ul li:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b0f045;
+}
+
+#offer ul li:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    display: block;
+    width: 8px;
+    height: 10px;
+    border-bottom: solid 3px #000;
+    border-right: solid 3px #000;
+    transform: rotate(45deg);
+}
+
+#trainers {
+    overflow: hidden;
+}
+
+.trainer-intro {
+    background: #0e0e18;
+    padding: 25px;
+}
+
+.job-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#testimonials {
+    clear: both;
+    overflow: hidden;
+    background: url("../img/testi-bg.jpg") top center no-repeat;
+    margin: 40px 0;
+}
+
+#testimonials .center-box {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.testimonial-text {
+    margin: 30px 15px;
+    width: 50%;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+footer {
+    overflow: hidden;
+    background: #0e0e18;
+    line-height: 1.5;
+    padding-bottom: 55px;
+}
+
+#footer-contact,
+#footer-insta,
+#footer-blog {
+    padding: 20px 0;
+}
+
+#footer-blog,
+#footer-insta {
+    margin-right: 30px;
+}
+
+time {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.blog-text {
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.footer-button {
+    color: #9cd000;
+    padding: 5px;
+}
+
+.footer-button:hover {
+    color: #fff;
+    background: #9cd000;
+    padding: 5px;
+}
+
+em {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.social li {
+    float: left;
+    margin: 20px 10px;
+}
+
+.social li:first-of-type {
+    margin-left: 0;
+}
+
+.social li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+}
+
+#facebook a {
+    background: url("../img/facebook.svg") center center no-repeat;
+    background-size: 20px auto;
+}
+
+#twitter a {
+    background: url("../img/twitter.svg") center center no-repeat;
+    background-size: 20px auto;
+}
+
+#google a {
+    background: url("../img/gplus.svg") center center no-repeat;
+    background-size: 20px auto;
+}
+
+#linkedin a {
+    background: url("../img/linkedin.svg") center center no-repeat;
+    background-size: 20px auto;
+}
+
+#youtube a {
+    background: url("../img/youtube.svg") center center no-repeat;
+    background-size: 20px auto;
+}
+
+#copyright {
+    overflow: hidden;
+    background: #060606;
+    padding: 15px 0;
+    font-size: 14px;
+    clear: both;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .center-box {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    #logo {
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    #logo a {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #header-promo {
+        margin-top: 10px; 
+    }
+
+    #promo-text {
+        width: 95%;
+        margin: 20px 0 280px 0;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    #hamburger img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #top {
+        background-position: bottom right 25%;
+        background-size: 300% auto;
+    }
+
+    #offer {
+        background-color: #0e0e18;
+        background-position: bottom left 20%;
+        background-size: 220% auto;
+        padding: 10px 0 280px 0;
+    }
+    
+    .offer-text {
+        float: left;
+        width: 100%;
+    }
+    
+    #trainings {
+        padding-bottom: 20px;
+    }
+    
+    #testimonials {
+        background-position: bottom right 5%;
+        background-size: cover;
+        margin: 20px;
+        position: relative;
+    }
+    
+    #testimonials:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+    }
+    
+    #testimonials h3, p {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .testimonial-text {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    footer {
+        padding-bottom: 25px;
+    }
+    
+    footer .one-third {
+        margin-bottom: 50px;
+    }
+}
